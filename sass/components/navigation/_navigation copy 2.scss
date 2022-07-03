@@ -1,12 +1,9 @@
 .main-navigation {
-	display: flex;
+	display: block;
 	width: 100%;
-	align-items: center;
 
 	ul {
-		// display: none;
-		visibility: hidden;
-		display: flex;
+		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -25,6 +22,7 @@
 			}
 
 			li {
+
 				&:hover > ul,
 				&.focus > ul {
 					display: block;
@@ -53,8 +51,6 @@
 
 	li {
 		position: relative;
-		margin-left: 1rem;
-
 
 		&:hover > a,
 		&.focus > a {
@@ -74,32 +70,15 @@
 }
 
 /* Small menu. */
-.menu-toggle {
-	background: rgb(75, 6, 75);
-	// color: #fff;
-	border: none;
-
-	svg {
-		// display: block;
-	}
-
-	svg path {
-		fill: #fff;
-	}
-}
+.menu-toggle,
 .main-navigation.toggled ul {
-	// display: block;
-	visibility: visible;
-}
-
-.main-navigation.toggled {
-	display: flex;
+	display: block;
 }
 
 @media screen and (min-width: 37.5em) {
 
 	.menu-toggle {
-		// display: none;
+		display: none;
 	}
 
 	.main-navigation ul {

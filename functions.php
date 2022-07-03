@@ -142,9 +142,38 @@ function portfolio_theme_scripts() {
 	wp_style_add_data( 'portfolio-theme-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'portfolio-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
+	}
+
+	// Enqueue Swiper on the Project Page
+	if ( is_singular() ) {
+
+		wp_enqueue_style(
+			'swiper-styles',
+			get_template_directory_uri() . '/sass/swiper.scss',
+			array(),
+			'8.2.4'
+		);
+
+		wp_enqueue_script(
+			'swiper-scripts',
+			get_template_directory_uri() . '/js/swiper-bundle.min.js',
+			array(),
+			'8.2.4',
+			true
+		);
+
+		wp_enqueue_script(
+			'swiper-settings',
+			get_template_directory_uri() . '/js/swiper-settings.js',
+			array( 'swiper-scripts' ),
+			_S_VERSION,
+			true
+
+		);
 	}
 }
 add_action( 'wp_enqueue_scripts', 'portfolio_theme_scripts' );
@@ -180,4 +209,6 @@ require get_template_directory() . '/inc/cpt.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
 
