@@ -2,7 +2,16 @@ body {
 	background: $color__background-body; // Fallback for when there is no custom background color defined.
 }
 
-.page-id-10 main {
-	max-width: 25rem;
-	margin: 0 auto;
+// .page-id-10 main {
+// 	max-width: 25rem;
+// 	margin: 0 auto;
+// 	padding: 0 4rem;
+// }
+.page-id-10 {
+	.site {
+		background-color: #001220;
+		color: #fff;
+	}
 }
+
+

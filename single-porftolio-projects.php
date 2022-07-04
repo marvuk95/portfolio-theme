@@ -92,7 +92,7 @@ get_header();
 							the_row();
 							?>
 							<article>
-								<?php $image = get_sub_field( 'feature_media' );
+								<?php $image = get_sub_field( 'feature_' );
 								$size = 'medium'; // (thumbnail, medium, large, full or custom size)
 								if( $image ) :
 									echo wp_get_attachment_image( $image, $size );					

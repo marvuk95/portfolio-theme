@@ -407,6 +407,18 @@ h6 {
 	text-align: center;
 }
 
+.home-projects h2 {
+	margin-top: 0;
+}
+
+.front-page-projects h3 {
+	margin-top: 0;
+}
+
+.home-contact {
+	text-align: center;
+}
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -459,15 +471,19 @@ big {
 	font-size: 125%;
 }
 
+.home-about p {
+	z-index: 100;
+}
+
 /* Elements
 --------------------------------------------- */
 body {
 	background: #fff;
 }
 
-.page-id-10 main {
-	max-width: 25rem;
-	margin: 0 auto;
+.page-id-10 .site {
+	background-color: #001220;
+	color: #fff;
 }
 
 hr {
@@ -740,6 +756,88 @@ textarea {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.front-page-projects {
+	padding: 3.125rem 0;
+	margin-bottom: 3rem;
+	background-color: rgba(46, 53, 68, 0.5);
+	border-radius: 20px;
+	max-width: 25rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+.front-page-projects:last-child {
+	margin-bottom: 0;
+}
+
+.front-page-projects-container {
+	max-width: 18.75rem;
+	margin: 0 auto;
+	height: 29.375rem;
+	position: relative;
+}
+.front-page-projects-container button {
+	position: absolute;
+	bottom: 0;
+}
+
+section {
+	position: relative;
+}
+
+.spacer {
+	aspect-ratio: 960/300;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.layer1 {
+	background-image: url("icons/ptop4.svg");
+}
+
+.layer2 {
+	background-image: url("icons/project-section-bottom.svg");
+}
+
+@media (min-width: 1000px) {
+	.spacer {
+		aspect-ratio: 960/200;
+	}
+	.layer1 {
+		background-image: url("icons/ptop3.svg");
+	}
+}
+.home-about,
+.home-contact {
+	padding: 2rem;
+}
+
+.blue {
+	background-color: #3c31dd;
+}
+
+.red {
+	background-color: #dd3f31;
+}
+
+.pink {
+	background-color: #ff0066;
+}
+
+.dark {
+	background-color: #0f0f10;
+}
+
+.dark-blue {
+	background-color: #001220;
+}
+
+.blob-motion {
+	position: absolute;
+	transform: translate(25%, -60%);
 }
 
 /* Comments

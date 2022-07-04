@@ -12,3 +12,10 @@ textarea {
 
 @import "headings";
 @import "copy";
+
+
+.home-about {
+	p {
+		z-index: 100;
+	}
+}
