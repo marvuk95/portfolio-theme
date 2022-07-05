@@ -1,5 +1,6 @@
 a {
 	color: $color__link;
+	text-decoration: none;
 
 	&:visited {
 		color: $color__link-visited;
@@ -19,4 +20,19 @@ a {
 	&:active {
 		outline: 0;
 	}
+}
+
+.front-page-projects-container button {
+	border: none;
+	background-color: #ff0066;
+	border-radius: 20px;
+	padding: 0.5 1rem;
+	
+	a {
+		color: #fff;
+	}
+}
+
+a.button {
+	color: #fff;
 }

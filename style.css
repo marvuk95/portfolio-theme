@@ -544,7 +544,8 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: #fff;
+	text-decoration: none;
 }
 a:visited {
 	color: #800080;
@@ -557,6 +558,20 @@ a:focus {
 }
 a:hover, a:active {
 	outline: 0;
+}
+
+.front-page-projects-container button {
+	border: none;
+	background-color: #ff0066;
+	border-radius: 20px;
+	padding: 0.5 1rem;
+}
+.front-page-projects-container button a {
+	color: #fff;
+}
+
+a.button {
+	color: #fff;
 }
 
 /* Forms
@@ -572,6 +587,10 @@ input[type=submit] {
 	color: rgba(0, 0, 0, 0.8);
 	line-height: 1;
 	padding: 0.6em 1em 0.4em;
+	border: none;
+	background-color: #ff0066;
+	border-radius: 20px;
+	padding: 0.5 1rem;
 }
 button:hover,
 input[type=button]:hover,
@@ -761,9 +780,9 @@ textarea {
 .front-page-projects {
 	padding: 3.125rem 0;
 	margin-bottom: 3rem;
-	background-color: rgba(46, 53, 68, 0.5);
+	background-color: rgba(0, 18, 32, 0.8);
 	border-radius: 20px;
-	max-width: 25rem;
+	max-width: 18rem;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -772,7 +791,7 @@ textarea {
 }
 
 .front-page-projects-container {
-	max-width: 18.75rem;
+	max-width: 13.75rem;
 	margin: 0 auto;
 	height: 29.375rem;
 	position: relative;
@@ -810,9 +829,23 @@ section {
 		background-image: url("icons/ptop3.svg");
 	}
 }
-.home-about,
 .home-contact {
-	padding: 2rem;
+	padding: 20rem 2rem;
+}
+
+.home-about {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 2rem;
+	padding-bottom: 18rem;
+}
+
+.home-projects {
+	display: block;
+	padding-bottom: 4rem;
+}
+.home-projects h2 {
+	padding-top: 4rem;
 }
 
 .blue {
@@ -835,9 +868,17 @@ section {
 	background-color: #001220;
 }
 
+svg {
+	max-width: 100%;
+	height: 100%;
+	display: block;
+}
+
 .blob-motion {
 	position: absolute;
-	transform: translate(25%, -60%);
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 /* Comments
