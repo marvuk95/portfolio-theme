@@ -144,6 +144,7 @@ function portfolio_theme_scripts() {
 	wp_enqueue_script( 'portfolio-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'kute', 'https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.0.0/kute.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'morphing-animation', get_template_directory_uri() . '/js/morph.js', array('kute'), _S_VERSION, true );
+	wp_enqueue_script( 'yellow-morphing-animation', get_template_directory_uri() . '/js/yellowmorph.js', array('kute'), _S_VERSION, true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

@@ -134,15 +134,48 @@ svg {
 
 .blob-motion {
 	position: absolute;
-	// transform: translate(25%, -60%);
-	// transform: translate(35%, -35%)
-	// width: 100%;
-	// max-width: 100%;
-	// z-index: 900;
-	// display: inline-block;
-	// bottom: -25%;
-	// left: 35%;
 	top: 80%;  
     left: 50%; 
     transform: translate(-50%, -50%);
+}
+
+.project-intro,
+.project-overview,
+.project-dev,
+.other-projects {
+	padding: 0 2rem;
+}
+
+.project-dev {
+	text-align: center;
+	
+	article {
+		background-color: #3c31dd;
+		border-radius: 20px;
+		padding: 2rem;
+		margin-bottom: 2rem;
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.other-projects {
+	text-align: center;
+}
+
+.technologies-used {
+	display: flex;
+	justify-content: space-around;
+
+	svg {
+		fill: #3c31dd;
+	}
+}
+
+.project-overview {
+	h2 ~ p {
+		margin-bottom: 0;
+	}
 }

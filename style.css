@@ -419,6 +419,10 @@ h6 {
 	text-align: center;
 }
 
+.postid-20 h1 {
+	padding: 0 2rem;
+}
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -481,7 +485,10 @@ body {
 	background: #fff;
 }
 
-.page-id-10 .site {
+.page-id-10 .site,
+.postid-20 .site,
+.postid-19 .site,
+.postid-18 .site {
 	background-color: #001220;
 	color: #fff;
 }
@@ -606,6 +613,12 @@ input[type=reset]:focus,
 input[type=submit]:active,
 input[type=submit]:focus {
 	border-color: #aaa #bbb #bbb;
+}
+
+.live-website-github {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1rem;
 }
 
 input[type=text],
@@ -879,6 +892,42 @@ svg {
 	top: 80%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.project-intro,
+.project-overview,
+.project-dev,
+.other-projects {
+	padding: 0 2rem;
+}
+
+.project-dev {
+	text-align: center;
+}
+.project-dev article {
+	background-color: #3c31dd;
+	border-radius: 20px;
+	padding: 2rem;
+	margin-bottom: 2rem;
+}
+.project-dev article p {
+	margin-bottom: 0;
+}
+
+.other-projects {
+	text-align: center;
+}
+
+.technologies-used {
+	display: flex;
+	justify-content: space-around;
+}
+.technologies-used svg {
+	fill: #3c31dd;
+}
+
+.project-overview h2 ~ p {
+	margin-bottom: 0;
 }
 
 /* Comments
