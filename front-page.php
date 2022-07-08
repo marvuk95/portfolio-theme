@@ -41,7 +41,8 @@ get_header();
 						<?php
 					endif;
 					?>
-					
+				
+				
 				<svg aria-label="Wave background" aria-hidden="true" class="blob-motion" id="visual" viewBox="0 0 300 300" width="150" height="150" xmlns="http://www.w3.org/2000/svg" 		xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="300" height="300" fill="#001220"></rect>
 				
 					<g transform="translate(142.43801725067536 146.5320701909335)"><path id="blob1" d="M57.2 -58.9C73.3 -54.7 84.9 -35.9 90.2 -14.6C95.5 6.7 94.5 30.3 80.9 39.9C67.3 49.5 41 44.9 20.8 48.5C0.7 52 -13.3 63.6 -32 66.2C-50.7 68.9 -74.1 62.6 -77.6 48.6C-81 34.7 -64.6 13.1 -55.7 -5C-46.7 -23 -45.2 -37.6 -37.2 -43.2C-29.1 -48.8 -14.6 -45.5 3 -49.1C20.6 -52.6 41.1 -63.1 57.2 -58.9" fill="#3c31dd"></path></g>
@@ -72,7 +73,9 @@ get_header();
 						<h2 id="projects-section"><?php the_field( 'project_subheading' ) ?></h2>
 						<?php
 					endif;
-					
+					?>
+					<div id="home-page-projects-container">
+					<?php
 					// Project box
 					?>
 					
@@ -97,7 +100,7 @@ get_header();
 
 											<!-- Project Image -->
 											<?php $image = get_sub_field( 'project_image' );
-											$size = 'medium'; // (thumbnail, medium, large, full or custom size)
+											$size = 'large'; // (thumbnail, medium, large, full or custom size)
 											if( $image ) :
 												echo wp_get_attachment_image( $image, $size );					
 											endif; ?>
@@ -118,6 +121,7 @@ get_header();
 							endwhile;
 						endif;
 						?>
+					</div>
 
 				</section>
 				<!-- <div class="spacer layer2"></div> -->

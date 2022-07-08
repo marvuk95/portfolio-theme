@@ -11,7 +11,9 @@ input[type="submit"] {
 	padding: 0.6em 1em 0.4em;
 
 	&:hover {
-		border-color: $color__border-button-hover;
+		// border-color: $color__border-button-hover;
+		background-color: #FCB514;
+		transition: background-color 0.3s;
 	}
 
 	&:active,
@@ -30,4 +32,38 @@ input[type="submit"] {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 1rem;
+}
+
+#home-arrow {
+	fill: #3c31dd;
+	// margin-top: 20rem;
+	display: inline;
+
+	path:hover {
+		height: 40px;
+	}
+
+}
+
+.menu-toggle {
+	border-radius: 0;
+}
+
+.project-intro {
+	button {
+		background-color: #FCB514;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: #4b064b;
+		}
+
+		a {
+			color: #001220;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
 }

@@ -36,3 +36,37 @@ a {
 a.button {
 	color: #fff;
 }
+
+
+// Home page arrow link
+.arrow{
+	display:inline-block;
+	float:left;
+	cursor:pointer;
+	transform: rotate(90deg);
+  }
+  
+  .arrow:before{
+	content:'';
+	height:4px;
+	width:20px;
+	background-color:#ff0066;
+	display:block;
+	float:left;
+	position:relative;
+	top:9px;
+	transition:0.2s ease-in-out;
+  }
+  
+  .arrow:after{
+	content:'';
+	float:left;
+	border-left:11px solid #ff0066;
+	border-right:11px solid transparent;
+	border-top:11px solid transparent;
+	border-bottom:11px solid transparent;
+  }
+  
+  .arrow:hover:before{
+	height:40px;
+  }
