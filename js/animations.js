@@ -9,22 +9,28 @@ const tonScroll = () => {
   const scroll = document.documentElement.scrollTop
 
   // If scroll value is more than 0 - add class
-  if (scroll > 600) {
-    articleTwo.classList.add("animate__fadeInRight");
-    articleTwo.classList.add("animate__delay-0.5s");
-    articleTwo.style.visibility = "visible";
+  if (screen.width >= 1200) {
+    if (scroll > 600) {
+      articleTwo.classList.add("animate__fadeInRight");
+      articleTwo.classList.add("animate__delay-0.5s");
+      articleTwo.style.visibility = "visible";
 
-  } 
-  
-  if (scroll > 800) {
-    articleOne.classList.add("animate__fadeInLeft")
-    articleOne.classList.add("animate__delay-0.8s");
+    } 
+    
+    if (scroll > 800) {
+      articleOne.classList.add("animate__fadeInLeft")
+      articleOne.classList.add("animate__delay-0.8s");
+      articleOne.style.visibility = "visible";
+    } 
+    
+    if (scroll > 1100) {
+      articleThree.classList.add("animate__fadeInRight")
+      articleThree.classList.add("animate__delay-1.1s");
+      articleThree.style.visibility = "visible";
+    }
+  } else {
     articleOne.style.visibility = "visible";
-  } 
-  
-  if (scroll > 1100) {
-    articleThree.classList.add("animate__fadeInRight")
-    articleThree.classList.add("animate__delay-1.1s");
+    articleTwo.style.visibility = "visible";
     articleThree.style.visibility = "visible";
   }
 }

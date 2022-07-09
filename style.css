@@ -432,6 +432,37 @@ h6 {
 	text-align: center;
 }
 
+.other-projects h2 {
+	font-size: 1.3rem;
+}
+
+.project-dev h2 {
+	font-size: 1.5rem;
+}
+.project-dev h3 {
+	color: #fcb514;
+	font-size: 1.5rem;
+	max-width: 43.75rem;
+	margin-top: 0;
+}
+
+.swiper-slide h3 {
+	color: #fcb514;
+}
+
+@media (min-width: 450px) {
+	.project-dev h2 {
+		font-size: 1.8rem;
+	}
+}
+@media (min-width: 700px) {
+	.other-projects h2 {
+		font-size: 2rem;
+	}
+	.project-dev h2 {
+		font-size: 2rem;
+	}
+}
 @media (min-width: 1000px) {
 	h1 {
 		font-size: 3rem;
@@ -441,6 +472,9 @@ h6 {
 	}
 	#projects-section {
 		font-size: 2rem;
+	}
+	.project-dev h2 {
+		font-size: 2.5rem;
 	}
 }
 @media (min-width: 1500px) {
@@ -454,16 +488,6 @@ h6 {
 		font-size: 3rem;
 	}
 }
-.project-dev h2 {
-	font-size: 3rem;
-}
-.project-dev h3 {
-	color: #fcb514;
-	font-size: 1.5rem;
-	max-width: 43.75rem;
-	margin-top: 0;
-}
-
 p {
 	margin-bottom: 1.5em;
 }
@@ -522,6 +546,10 @@ big {
 
 .project-dev p {
 	color: #fcb514;
+}
+
+.site-info {
+	text-align: center;
 }
 
 /* Elements
