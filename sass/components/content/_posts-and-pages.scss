@@ -4,7 +4,7 @@
 
 .post,
 .page {
-	// margin: 0 0 1.5em;
+
 }
 
 .updated:not(.published) {
@@ -31,10 +31,8 @@
 	margin-left: auto;
 	margin-right: auto;
 	padding: 2.5rem;
+	visibility: hidden;
 
-	&:last-child {
-		margin-bottom: 0;
-	}
 
 	&:hover {
 		transition: all .35s ease-in-out;
@@ -45,8 +43,6 @@
 }
 
 .front-page-projects-container {
-	// max-width: 13.75rem;
-	// max-width: 18.75rem;
 	margin: 0 auto;
 	height: 30rem;
 	position: relative;
@@ -141,24 +137,11 @@ section {
 }
 
 .home-projects {
-	// display: block;
 	padding-bottom: 4rem;
 }
 
 .blue {
 	background-color: #3c31dd;
-}
-
-.red {
-	background-color: #dd3f31;
-}
-
-.pink {
-	background-color: #ff0066;
-}
-
-.dark {
-	background-color: #0f0f10;
 }
 
 .dark-blue {
@@ -194,11 +177,9 @@ svg {
 	text-align: center;
 	
 	article {
-		// background-color: #3c31dd;
 		border-radius: 20px;
 		padding: 2rem;
 		box-shadow: 0 5px 15px rgba(252, 181, 20, 0.2);
-		// box-shadow: 0 5px 15px rgba(207, 206, 216, 0.1);
 		max-width: 43.75rem;
 		margin: 1rem auto 4rem;
 
@@ -215,7 +196,6 @@ svg {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr;
-		// gap: 2rem;
 		max-width: 60rem;
 		margin: 0 auto;
 		justify-content: start;
@@ -254,7 +234,6 @@ svg {
 }
 
 .project-overview {
-	// background-color: #3c31dd;
 	box-shadow: 0 5px 15px rgba(207, 206, 216, 0.1);
 	margin: 2rem;
 	padding: 1rem;

@@ -140,26 +140,19 @@ add_action( 'widgets_init', 'portfolio_theme_widgets_init' );
 function portfolio_theme_scripts() {
 	wp_enqueue_style( 'portfolio-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'portfolio-theme-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'animatecss', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css', array(), _S_VERSION );
+
 
 	wp_enqueue_script( 'portfolio-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'kute', 'https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.0.0/kute.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'morphing-animation', get_template_directory_uri() . '/js/morph.js', array('kute'), _S_VERSION, true );
 	wp_enqueue_script( 'yellow-morphing-animation', get_template_directory_uri() . '/js/yellowmorph.js', array('kute'), _S_VERSION, true );
-
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+	wp_enqueue_script( 'effects', get_template_directory_uri() . '/js/animations.js', array(), _S_VERSION, true );
 
 	// Enqueue Swiper on the Project Page
 	if ( is_singular() ) {
 
-		wp_enqueue_style(
-			'swiper-styles',
-			get_template_directory_uri() . '/sass/swiper.scss',
-			array(),
-			'8.2.4'
-		);
+		wp_enqueue_style( 'swiper-styles', get_template_directory_uri() . '/css/swiper-bundle.css', array(), '8.2.4');
 
 		wp_enqueue_script(
 			'swiper-scripts',

@@ -22,10 +22,9 @@ get_header();
 			the_post();
 			if ( function_exists ( 'get_field' ) ):
 				?>
-				<!-- // get_template_part( 'template-parts/content', 'page' ); -->
 				<section class="home-about dark-blue">
 					<!-- Home Title -->
-					<h1><?php the_title() ?></h1>
+					<h1 id="front-page-heading" class="animate__animated animate__fadeInLeft"><?php the_title() ?></h1>
 					<?php 
 					//Home description
 					if ( get_field ( 'home_about_description' ) ):
@@ -64,7 +63,6 @@ get_header();
 			
 				</svg>
 
-				<!-- <div class="spacer layer1"></div> -->
 				<section class="home-projects blue">
 					<?php 
 					// Projects Section Title
@@ -84,7 +82,7 @@ get_header();
 							while( have_rows( 'projects_section' ) ): 
 								the_row(); 
 								?>
-								<article class="front-page-projects">
+								<article class="front-page-projects animate__animated">
 									<div class="front-page-projects-container">
 										<?php
 										$link = get_sub_field( 'project_learn_more' );
@@ -124,7 +122,6 @@ get_header();
 					</div>
 
 				</section>
-				<!-- <div class="spacer layer2"></div> -->
 
 				<svg id="visual" viewBox="0 0 1920 300" width="1920" height="300"
 					xmlns="http://www.w3.org/2000/svg"
